@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+<style>
+
+</style>
+</head>
+<body>
+<label>What would you like reversed?<input type="text" id="strInput"></label>
+<p><button type="button" id="reverseMe">Reverse</button></p>
+
+<script>
+window.onload = function start(){
+
+//variables
+var string = document.getElementById("strInput");
+var button = document.getElementById("reverseMe");
+
+//event listener
+button.onclick = function start() {
+  string.value = reverse(string.value);
+}
+//reverses the order of the string
+  function reverse(x) {
+      var o = '';
+      for (var i = x.length - 1; i >= 0; i--)
+          o += x[i];
+      return o;
+  }
+}
+</script>
+</body>
+</html>
