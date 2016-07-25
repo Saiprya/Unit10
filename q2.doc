@@ -1,0 +1,9 @@
+1. Value:
+
+function (r) {
+    this.radius = r;
+};
+
+2. radius 
+
+3. radius
